@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://d0srp7auejemm"]
+
+[ext_resource type="Script" uid="uid://8uv4pqpojtlq" path="res://Scripts/win_screen.gd" id="1_kafqp"]
+
+[node name="Win Screen" type="Control" unique_id=1263783909]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kafqp")
+
+[node name="Button" type="Button" parent="." unique_id=1218960232]
+layout_mode = 0
+offset_left = 409.0
+offset_top = 363.0
+offset_right = 677.0
+offset_bottom = 438.0
+text = "Play again"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
